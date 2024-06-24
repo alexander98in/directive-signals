@@ -52,7 +52,6 @@ export class CustomLabelDirective implements OnInit {
     if( errors.includes('minlength') ) {
       const min = this._errors!['minlength']['requiredLength'];
       const current = this._errors!['minlength']['actualLength'];
-
       this.htmlElement.nativeElement.innerText = `Mínimo ${current}/${min} caracteres`;
       return;
     }
